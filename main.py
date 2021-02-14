@@ -3,8 +3,8 @@ import datetime
 import pathlib
 import shutil
 
-PATH = "C:\\Users\\Ryuu\\downloads\\Test\\"
-OUT_DIR = "E:\\Test\\"
+PATH = "C:\\Users\\Ryuu\\downloads\\"
+OUT_DIR = "E:\\"
 
 
 def create_dir(dir_name):
@@ -45,5 +45,3 @@ for file in os.listdir(PATH):
         create_dir(date_dir)
 
         shutil.move(PATH + file, date_dir + file)
-
-
